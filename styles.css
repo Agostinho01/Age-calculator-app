@@ -31,9 +31,40 @@ body {
 }
 
 .main {
+  display: flex;
   background-color: var(--White);
   height: 420px;
   width: 420px;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="number"] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.input-form {
+  display: flex;
+}
+
+.submeter {
+  border-radius: 50px;
+  height: 70px;
+  width: 80px;
+  align-items: center;
+  padding: 0;
+  background-color: hsl(228, 45%, 44%);
+  position: absolute;
+  left: 50%;
+  top: 60%;
 }
