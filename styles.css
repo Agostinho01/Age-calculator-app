@@ -4,6 +4,8 @@
 }
 
 :root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light: hsl(0, 100%, 67%);
   --White: hsl(0, 0%, 100%);
   --Off-white: hsl(0, 0%, 94%);
   --Light-grey: hsl(0, 0%, 86%);
@@ -16,24 +18,22 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background-color: var(--Light-grey);
 }
-.attribution {
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
 
 .main {
-  display: flex;
+  /* display: flex; */
+  margin: 150px auto;
   background-color: var(--White);
-  height: 420px;
+  height: 320px;
   width: 420px;
   padding: 30px;
   border-radius: 15px;
@@ -41,30 +41,81 @@ body {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  border-bottom: solid 1px var(--Light-grey);
 }
 
 input[type="number"] {
-  width: 30%;
+  width: 100px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border: 1px solid var(--Light-grey);
   border-radius: 5px;
+  color: var(--Smokey-grey);
+  font-weight: 800;
 }
 
 .input-form {
-  display: flex;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
 .submeter {
   border-radius: 50px;
-  height: 70px;
-  width: 80px;
-  align-items: center;
-  padding: 0;
-  background-color: hsl(228, 45%, 44%);
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  background-color: var(--Purple);
   position: absolute;
-  left: 50%;
-  top: 60%;
+  right: 10;
+  bottom: -25px;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
+.input-form span {
+  color: var(--Smokey-grey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.result {
+  color: var(--Purple);
+  display: inline-block;
+}
+
+h1:first-child {
+  margin-top: 15px;
+}
+
+h1 {
+  margin: 0 10px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 900;
+  color: var(--Off-black);
+}
+
+/*Remover as setas do input form*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover {
+  border-color: var(--Purple);
+  cursor: pointer;
+}
+
+input:focus {
+  border-color: var(--Purple);
+  caret-color: var(--Purple) underscore;
 }
