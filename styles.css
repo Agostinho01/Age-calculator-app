@@ -24,8 +24,8 @@ body {
 .main {
   margin: 150px auto;
   background-color: var(--White);
-  height: 320px;
-  width: 420px;
+  height: 350px;
+  width: 450px;
   padding: 30px;
   border-radius: 15px;
   border-bottom-right-radius: 100px;
@@ -37,14 +37,15 @@ body {
 }
 
 .input-form input {
-  width: 100px;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 120px;
+  padding: 0 20px;
+  margin-top: 8px;
   box-sizing: border-box;
   border: 2px solid var(--Light-grey);
   border-radius: 5px;
   color: var(--Off-black);
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .input-form input::placeholder {
@@ -55,8 +56,8 @@ body {
 .input-form {
   display: inline-block;
   width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  height: 120px;
+  margin-right: 36px;
 }
 
 .submeter {
@@ -97,6 +98,7 @@ h1:first-child {
 h1 {
   margin: 0 10px;
   font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-weight: 900;
   color: var(--Off-black);
@@ -118,4 +120,14 @@ h1 {
   border-color: var(--Purple);
   outline: none;
   color: var(--Purple);
+}
+
+/* Demo Styling error */
+.error {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  font-size: 9px;
+  color: var(--Light);
+  visibility: hidden;
 }
