@@ -21,16 +21,7 @@ body {
   background-color: var(--Light-grey);
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
 .main {
-  /* display: flex; */
   margin: 150px auto;
   background-color: var(--White);
   height: 320px;
@@ -45,12 +36,12 @@ body {
   border-bottom: solid 1px var(--Light-grey);
 }
 
-input[type="number"] {
+.input-form input {
   width: 100px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 1px solid var(--Light-grey);
+  border: 2px solid var(--Light-grey);
   border-radius: 5px;
   color: var(--Smokey-grey);
   font-weight: 800;
@@ -74,6 +65,9 @@ input[type="number"] {
   bottom: -25px;
 }
 
+.submeter:hover {
+  background-color: var(--Off-black);
+}
 img {
   height: 30px;
   width: 30px;
@@ -104,18 +98,20 @@ h1 {
 }
 
 /*Remover as setas do input form*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.input-form input::-webkit-outer-spin-button,
+.input-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input:hover {
-  border-color: var(--Purple);
+.input-form input:hover {
   cursor: pointer;
+  border-color: var(--Purple);
 }
 
-input:focus {
+.input-form input:focus {
   border-color: var(--Purple);
-  caret-color: var(--Purple) underscore;
+  outline: none;
+  color: var(--Off-black);
+  
 }
