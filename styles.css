@@ -40,6 +40,7 @@ body {
   width: 120px;
   padding: 0 20px;
   margin-top: 8px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border: 2px solid var(--Light-grey);
   border-radius: 5px;
@@ -122,12 +123,20 @@ h1 {
   color: var(--Purple);
 }
 
-/* Demo Styling error */
 .error {
   position: relative;
   display: inline-block;
   font-style: italic;
   font-size: 9px;
   color: var(--Light);
-  visibility: hidden;
+}
+
+/* Styles for Events*/
+.error input {
+  border-color: var(--Light);
+}
+
+.error .label {
+  font-style: normal;
+  color: var(--Light);
 }
