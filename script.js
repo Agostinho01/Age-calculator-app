@@ -1,20 +1,29 @@
-console.log("Script funcionando");
-
-// Vlidating the forms
 const form = document.getElementById("form");
 const day = document.getElementById("fday");
 const month = document.getElementById("fmonth");
 const year = document.getElementById("fyear");
 const button = document.getElementById("submitBtn");
 
-//Adding Limits to the Character on th input forms
+//Function to add Limits to the Character on th input forms(type=number)
+function inputMaxLength(inputElement, maxLength) {
+  if (inputElement.value.length > maxLength) {
+    inputElement.value = inputElement.value.slice(0, maxLength);
+  }
+}
+
 day.addEventListener("input", function () {
-  const textLength = day.value.length;
+  inputMaxLength(day, 2);
+});
+month.addEventListener("input", function () {
+  inputMaxLength(month, 2);
+});
+year.addEventListener("input", function () {
+  inputMaxLength(year, 4);
 });
 
+// Vlidating the forms
 button.addEventListener("click", (e) => {
   e.preventDefault();
-
   validateInput();
 });
 
